@@ -1,0 +1,19 @@
+
+<% if @error %>
+  <%= @error %><br/>
+<% end %>
+<%= form_tag session_url do %>
+ 
+  <%= @email %>
+  <%= @password %>
+  <%= @email %>
+  
+  <br>
+  
+  <%= label :email, 'email:' %>
+  <%= text_field_tag :email, @email %><br />
+  <%= label :password, 'password:' %>
+  <%= text_field_tag :password, "" %><br />
+  <%= submit_tag "login" %><br />
+<% end %>
+<%= link_to "新規作成", new_user_url %>
