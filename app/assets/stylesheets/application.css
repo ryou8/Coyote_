@@ -1,0 +1,107 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ *{
+margin: 0;
+   padding:　0;
+ }
+
+body{
+  background-color: #ffb833;
+  color: white;
+  margin: 60px auto;
+  /*border: 2px solid black;*/
+  width: 800px;
+  height: 400px;
+}
+
+/*☆リンク*/
+/*.link_border{
+  border: 3px solid white;
+  width: 10%;
+  text-align:center;
+}
+.link_border:hover{
+  background:white;
+}*/
+
+.link{
+  color: white;
+  /*リンクの下線消す*/
+  text-decoration-line:none;
+  border: 3px solid white;
+  padding: 5px 10px;
+  text-align:center;
+}
+.link:hover{
+  color: #ffb833;
+  background:white;
+}
+
+.new{
+  /*border: 2px solid red;*/
+}
+
+.form{
+  margin: 20px 150px;
+  height: 200px;
+  /*border: 2px solid yellow;*/
+}
+
+.errors{
+  text-align: center;
+  width: inherit;
+  margin: 0 auto;
+  color: red;
+}
+
+/*☆ラベル*/
+.lebel{
+  color: #ffb833;
+  background-color: white;
+  display: inline-block;
+  width: 200px;
+  text-align:center;
+  margin-right: 60px;
+  margin-bottom: 20px;
+}
+
+.text_field{
+  width: 30%;
+  height: 10px;
+}
+
+/*☆ボタン*/
+.square_btn {
+    width: 80px;
+    height: 40px;
+    float: right;
+    background-color: #ffb833;
+    display: inline-block;
+    padding: 0.3em 1em;
+    text-decoration: none;
+    color: white;
+    border: solid 2px white;
+    /*border-radius: 3px;*/
+    transition: .4s;
+}
+.square_btn:hover {
+    background:white;
+    color: #ffb833;
+}
+
+h1{
+  text-align:center;
+}
