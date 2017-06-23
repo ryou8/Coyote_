@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  u1: 1
+  u2: 1
+  u3: 1
+  u4: 1
+  last_num: 1
+  now_user: 1
+
+two:
+  u1: 1
+  u2: 1
+  u3: 1
+  u4: 1
+  last_num: 1
+  now_user: 1

@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   get 'session/new'
 
   resources:users
+  resources:rooms
   
   root 'users#index'
   
