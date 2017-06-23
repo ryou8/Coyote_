@@ -1,45 +1,43 @@
 <div class="new">
-<h1>ユーザー新規登録</h1>
-<br>
-<%= form_tag users_path do %>
+  <h1>ユーザー新規登録</h1>
+  <br>
+  <%= form_tag users_path do %>
 
-<% if @user.errors.any? %>
-<div class="errors">
-     <%= @user.errors.count %>件のエラーがあります。<br>
-   </div>
+<div class="error">
+  <% if @user.errors.any? %>
+  <div class="errors">
+    <%= @user.errors.count %>件のエラーがあります。<br>
+  </div>
 
-       <% @user.errors.full_messages.each do |message|%>
-<div class="errors">
-       <%= message %><br>
-     </div>
-     <% end %>
-<% end %><br>
-
-
-<div class="form">
-<span class="lebel">
-<%= label_tag :name %>
-</span>
-<span class="text_field">
-<%= text_field_tag :name,@user.name %><br>
-</span>
-
-<span class="lebel">
-  <%= label_tag :userid %>
-</span>
-<span class="text_field">
-  <%= text_field_tag :userid,@user.userid %><br>
-</span>
-
-<span class="lebel">
-  <%= label_tag :password %>
-</span>
-<span class="text_field">
-  <%= text_field_tag :password,@user.password%>
-</span>
-
-<br>
-<%= submit_tag "登録",class:"square_btn " %>
-
-<% end %>
+  <% @user.errors.full_messages.each do |message|%>
+  <div class="errors">
+    <%= message %><br>
+  </div>
+  <% end %>
+  <% end %><br>
 </div>
+
+  <div class="form">
+    <span class="lebel">
+      <%= label_tag :name %>
+    </span>
+
+      <%= text_field_tag :name,@user.name,class:"text_field"%><br>
+
+    <span class="lebel">
+      <%= label_tag :userid %>
+    </span>
+
+      <%= text_field_tag :userid,@user.userid,class:"text_field" %><br>
+
+    <span class="lebel">
+      <%= label_tag :password %>
+    </span>
+
+      <%= text_field_tag :password,@user.password,class:"text_field"%>
+
+    <br><br>
+    <%= submit_tag "登録",class:"square_btn " %>
+
+    <% end %>
+  </div>
